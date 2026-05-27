@@ -55,6 +55,7 @@ def main():
     manager = TaskManager()
     print("Task Manager Practice")
     task1 = Task(1, "Create GitHub repository", "Alice", "High")
+
     task2 = Task(2, "Clone repository to local PC", "Bob", "Medium")
     task3 = Task(3, "Practice merge conflict on main branch", "Charlie", "High")
 
@@ -67,10 +68,12 @@ def main():
     print("Main branch exclusive message")
     print("All tasks:")
     manager.show_all_tasks()
-
+    print("Dev branch additional message")
     print("Open tasks:")
     manager.show_open_tasks()
 
+def count_tasks(self):
+    return len(self.tasks)
 
 if __name__ == "__main__":
     main()
